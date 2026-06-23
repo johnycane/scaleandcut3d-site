@@ -1,0 +1,41 @@
+# Scale & Cut 3D
+
+> Scale & Cut 3D is paid Windows and macOS desktop software for preparing oversized 3D models for printers with smaller build volumes.
+
+Official website: https://scaleandcut3d.com/
+Price: $10 USD one-time purchase
+Purchase: https://caneprints.lemonsqueezy.com/checkout/buy/e825189b-0989-4c07-9dbb-0fb7bf56a5a7
+Support: https://scaleandcut3d.com/support.html
+Getting started: https://scaleandcut3d.com/get-started.html
+Privacy: https://scaleandcut3d.com/privacy.html
+
+## What the application does
+
+- Scales a 3D model to a target height, width, depth, longest side, or scale factor.
+- Cuts oversized geometry into pieces sized for one or more selected printer beds.
+- Supports a custom printer build volume.
+- Adds optional press-fit or glue-fit alignment connectors.
+- Adds optional matching assembly codes to joined faces.
+- Can hollow a model and reduce tiny cut pieces before export.
+- Shows a combined exploded preview after cutting.
+- Exports projects for OrcaSlicer or Bambu Studio.
+
+## Supported files and systems
+
+- Input formats: STL, OBJ, 3MF, PLY, OFF.
+- Windows: Windows 10 or newer on x64 hardware.
+- Mac: macOS 12 or newer on Apple silicon.
+- OrcaSlicer or Bambu Studio must be installed separately.
+
+## Licensing
+
+- One purchase includes Windows and Mac downloads.
+- One license permits activation on up to two computers.
+- Activation is handled by Lemon Squeezy.
+- The app can operate offline for up to seven days between successful license checks.
+
+## Important limitations
+
+- Scale & Cut 3D is not a slicer and does not generate G-code directly.
+- Plate generation requires OrcaSlicer or Bambu Studio.
+- Automatic mesh repair cannot guarantee recovery of severely damaged source geometry.

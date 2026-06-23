@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://scaleandcut3d.com/</loc></url>
-  <url><loc>https://scaleandcut3d.com/get-started.html</loc></url>
-  <url><loc>https://scaleandcut3d.com/support.html</loc></url>
-  <url><loc>https://scaleandcut3d.com/privacy.html</loc></url>
+  <url><loc>https://scaleandcut3d.com/</loc><lastmod>2026-06-23</lastmod><priority>1.0</priority></url>
+  <url><loc>https://scaleandcut3d.com/get-started.html</loc><lastmod>2026-06-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://scaleandcut3d.com/support.html</loc><lastmod>2026-06-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://scaleandcut3d.com/privacy.html</loc><lastmod>2026-06-23</lastmod><priority>0.4</priority></url>
 </urlset>
