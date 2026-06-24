@@ -55,6 +55,7 @@
         "featureList": [
           "Scale models to a target physical size",
           "Cut models into pieces sized for selected printer beds",
+          "Route each piece to the smallest selected printer bed that fits it",
           "Add press-fit or glue-fit alignment connectors",
           "Preview the cut model as an exploded assembly",
           "Automatically arrange pieces and create plated 3MF projects for OrcaSlicer or Bambu Studio"
@@ -89,6 +90,11 @@
             "@type": "Question",
             "name": "Which 3D model formats can it open?",
             "acceptedAnswer": { "@type": "Answer", "text": "The app accepts STL, OBJ, 3MF, PLY, and OFF model files." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I prepare one model for printers with different bed sizes?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Select multiple printer models or a custom bed size. Scale & Cut 3D plans cuts using the largest selected build volume, then routes each finished piece to the smallest selected printer it fits. Pieces that require the larger bed stay assigned to that printer. Current routing prioritizes fit rather than balancing equal workloads across every printer." }
           },
           {
             "@type": "Question",
@@ -149,7 +155,7 @@
       </div>
       <div class="feature-grid">
         <article><span class="feature-number">01</span><h3>Scale precisely</h3><p>Set a final height, width, depth, longest side, or scale factor using millimetres, centimetres, inches, or feet.</p></article>
-        <article><span class="feature-number">02</span><h3>Cut for your beds</h3><p>Select one or more printers. Pieces are cut and routed according to the available build volumes, including custom printer sizes.</p></article>
+        <article><span class="feature-number">02</span><h3>Mixed-bed routing</h3><p>Select printers with different build volumes, including custom sizes. Each finished piece is routed to the smallest selected bed it fits, reserving larger beds for pieces that need them.</p></article>
         <article><span class="feature-number">03</span><h3>Plan assembly</h3><p>Add press-fit or glue-fit pegs, recessed matching codes, tiny-piece avoidance, and optional hollowing before export.</p></article>
         <article><span class="feature-number">04</span><h3>Automatic plated 3MFs</h3><p>Inspect the exploded assembly, then generate 3MF projects with pieces already oriented and arranged across print plates.</p></article>
       </div>
@@ -183,7 +189,7 @@
       </div>
       <p class="video-fallback">Player unavailable? <a href="https://www.youtube.com/watch?v=dpoS-jl1LX4" target="_blank" rel="noopener">Watch the walkthrough on YouTube</a>.</p>
       <ol class="steps">
-        <li><span>1</span><div><h3>Choose and size</h3><p>Open a model, choose its finished size, and select every printer available for the job.</p></div></li>
+        <li><span>1</span><div><h3>Choose and size</h3><p>Open a model, choose its finished size, and select one or more available printers. Mixed bed sizes are supported.</p></div></li>
         <li><span>2</span><div><h3>Cut and inspect</h3><p>Generate bed-sized pieces and review the combined exploded assembly before committing to plates.</p></div></li>
         <li><span>3</span><div><h3>Plate and print</h3><p>Open the exported OrcaSlicer or Bambu Studio projects to set filament, slice, and print.</p></div></li>
       </ol>
@@ -197,6 +203,7 @@
       <div class="faq-list">
         <details><summary>What does Scale &amp; Cut 3D do?</summary><p>It scales oversized 3D models, divides them into pieces that fit selected printer beds, optionally adds alignment connectors, and exports slicer-ready projects.</p></details>
         <details><summary>Which slicers are supported?</summary><p>OrcaSlicer, Bambu Studio, and Orca-based slicers such as QIDI Studio and ElegooSlicer can open the plated projects. Select printer, material, and process profiles appropriate for your machine before slicing. PrusaSlicer and Cura can import geometry but do not preserve the automatic Bambu/Orca plate organization.</p></details>
+        <details><summary>Can I use printers with different bed sizes for one model?</summary><p>Yes. Select multiple printer models or add a custom bed size. Scale &amp; Cut 3D plans the cuts around the largest selected build volume, then routes each resulting piece to the smallest selected printer it fits. Large-only pieces remain assigned to the larger bed. Current routing prioritizes fit and does not yet balance equal workloads across every printer.</p></details>
         <details><summary>Which model formats can it open?</summary><p>STL, OBJ, 3MF, PLY, and OFF files are supported.</p></details>
         <details><summary>Does one license cover Windows and Mac?</summary><p>Yes. One purchase includes both downloads and activation on up to two computers. The Mac build currently requires Apple silicon.</p></details>
       </div>

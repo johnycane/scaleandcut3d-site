@@ -13,6 +13,8 @@ Privacy: https://scaleandcut3d.com/privacy.html
 
 - Scales a 3D model to a target height, width, depth, longest side, or scale factor.
 - Cuts oversized geometry into pieces sized for one or more selected printer beds.
+- Supports mixed-bed routing: cuts are planned around the largest selected build volume, then each finished piece is assigned to the smallest selected printer it fits.
+- Pieces that only fit a larger selected bed remain assigned to that printer. Routing currently prioritizes physical fit rather than equal workload balancing.
 - Supports a custom printer build volume.
 - Adds optional press-fit or glue-fit alignment connectors.
 - Adds optional matching assembly codes to joined faces.
