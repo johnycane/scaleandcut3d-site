@@ -27,10 +27,10 @@ Privacy: https://scaleandcut3d.com/privacy.html
 - Input formats: STL, OBJ, 3MF, PLY, OFF.
 - Windows: Windows 10 or newer on x64 hardware.
 - Mac: macOS 12 or newer on Apple silicon.
-- Full plated-project support: OrcaSlicer and Bambu Studio.
-- Verified plate-layout support: QIDI Studio, with QIDI printer, material, and process profiles selected before slicing.
+- Full plated-project support: OrcaSlicer, Bambu Studio, and Orca-based slicers such as QIDI Studio and ElegooSlicer.
+- Users must select printer, material, and process profiles appropriate for their machine before slicing.
+- Very old Orca-based releases may need updating to read projects created by newer Bambu/Orca project formats.
 - Geometry-only import: PrusaSlicer; Cura may also import geometry. These do not preserve the automatic plate organization.
-- Incompatible tested versions: Creality Print 7.1 and ElegooSlicer 1.1.8.
 - A supported slicer must be installed separately.
 
 ## Licensing
