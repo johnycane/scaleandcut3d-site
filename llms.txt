@@ -19,14 +19,19 @@ Privacy: https://scaleandcut3d.com/privacy.html
 - Can hollow a model and reduce tiny cut pieces before export.
 - Shows a combined exploded preview after cutting.
 - Automatically orients and arranges pieces across print plates.
-- Creates plated 3MF projects for OrcaSlicer or Bambu Studio.
+- Creates fully plated 3MF projects for OrcaSlicer or Bambu Studio.
+- QIDI Studio has been verified to preserve generated plate layouts after selecting appropriate QIDI profiles.
 
 ## Supported files and systems
 
 - Input formats: STL, OBJ, 3MF, PLY, OFF.
 - Windows: Windows 10 or newer on x64 hardware.
 - Mac: macOS 12 or newer on Apple silicon.
-- OrcaSlicer or Bambu Studio must be installed separately.
+- Full plated-project support: OrcaSlicer and Bambu Studio.
+- Verified plate-layout support: QIDI Studio, with QIDI printer, material, and process profiles selected before slicing.
+- Geometry-only import: PrusaSlicer; Cura may also import geometry. These do not preserve the automatic plate organization.
+- Incompatible tested versions: Creality Print 7.1 and ElegooSlicer 1.1.8.
+- A supported slicer must be installed separately.
 
 ## Licensing
 

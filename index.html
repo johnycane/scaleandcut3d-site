@@ -83,7 +83,7 @@
           {
             "@type": "Question",
             "name": "Which slicers does Scale & Cut 3D support?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Scale & Cut 3D exports projects for OrcaSlicer and Bambu Studio. The selected slicer must be installed separately." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Scale & Cut 3D creates fully plated projects for OrcaSlicer and Bambu Studio. QIDI Studio has also been verified to preserve the generated plate layouts after selecting an appropriate QIDI printer profile. PrusaSlicer can recover the model geometry, but does not preserve the Bambu/Orca plate organization or project settings. Cura may import geometry only. Creality Print 7.1 and ElegooSlicer 1.1.8 are not compatible with the current plated project format." }
           },
           {
             "@type": "Question",
@@ -137,7 +137,7 @@
     </section>
 
     <div class="compatibility" aria-label="Compatibility">
-      <div><span>Works with</span><strong>OrcaSlicer</strong><strong>Bambu Studio</strong></div>
+      <div><span>Plated projects</span><strong>OrcaSlicer</strong><strong>Bambu Studio</strong><strong>QIDI Studio*</strong></div>
       <div><span>Imports</span><strong>STL</strong><strong>OBJ</strong><strong>3MF</strong><strong>PLY</strong><strong>OFF</strong></div>
     </div>
 
@@ -153,6 +153,24 @@
         <article><span class="feature-number">03</span><h3>Plan assembly</h3><p>Add press-fit or glue-fit pegs, recessed matching codes, tiny-piece avoidance, and optional hollowing before export.</p></article>
         <article><span class="feature-number">04</span><h3>Automatic plated 3MFs</h3><p>Inspect the exploded assembly, then generate 3MF projects with pieces already oriented and arranged across print plates.</p></article>
       </div>
+    </section>
+
+    <section class="section slicer-support" id="slicer-support" aria-labelledby="slicer-support-title">
+      <div class="section-heading">
+        <p class="kicker">Slicer compatibility</p>
+        <h2 id="slicer-support-title">Know what opens as a complete project.</h2>
+        <p>Scale &amp; Cut 3D uses Bambu/Orca project metadata to retain automatic plate assignments. Some slicers can open the model geometry without preserving those plates.</p>
+      </div>
+      <div class="support-table" role="table" aria-label="Slicer compatibility details">
+        <div class="support-row support-head" role="row"><span role="columnheader">Slicer</span><span role="columnheader">Compatibility</span><span role="columnheader">What to expect</span></div>
+        <div class="support-row" role="row"><strong role="cell">OrcaSlicer</strong><span class="status full" role="cell">Full project</span><p role="cell">Opens the generated plates, arranged pieces, and project data.</p></div>
+        <div class="support-row" role="row"><strong role="cell">Bambu Studio</strong><span class="status full" role="cell">Full project</span><p role="cell">Opens the generated plates, arranged pieces, and project data.</p></div>
+        <div class="support-row" role="row"><strong role="cell">QIDI Studio</strong><span class="status verified" role="cell">Plates verified*</span><p role="cell">Preserves generated plate layouts. Select a compatible QIDI printer, material, and process profile before slicing.</p></div>
+        <div class="support-row" role="row"><strong role="cell">PrusaSlicer</strong><span class="status limited" role="cell">Geometry only</span><p role="cell">Can recover the model pieces, but does not retain Bambu/Orca plate organization or project settings.</p></div>
+        <div class="support-row" role="row"><strong role="cell">Cura</strong><span class="status limited" role="cell">Geometry only</span><p role="cell">May import model geometry, but the automatic plate layout is not supported.</p></div>
+        <div class="support-row" role="row"><strong role="cell">Creality Print 7.1 / ElegooSlicer 1.1.8</strong><span class="status no" role="cell">Not compatible</span><p role="cell">These versions reject the current plated project format.</p></div>
+      </div>
+      <p class="support-note">*QIDI Studio compatibility was verified with a seven-plate Bambu-format project. Slicer format support can change between versions.</p>
     </section>
 
     <section class="section how" id="how-it-works" aria-labelledby="how-title">
@@ -179,7 +197,7 @@
       </div>
       <div class="faq-list">
         <details><summary>What does Scale &amp; Cut 3D do?</summary><p>It scales oversized 3D models, divides them into pieces that fit selected printer beds, optionally adds alignment connectors, and exports slicer-ready projects.</p></details>
-        <details><summary>Which slicers are supported?</summary><p>Scale &amp; Cut 3D exports for OrcaSlicer and Bambu Studio. Install your chosen slicer separately before generating plated projects.</p></details>
+        <details><summary>Which slicers are supported?</summary><p>OrcaSlicer and Bambu Studio have full plated-project support. QIDI Studio has been verified to preserve generated plate layouts after you select the correct QIDI profiles. PrusaSlicer and Cura are geometry-only options and do not preserve the automatic plates. Creality Print 7.1 and ElegooSlicer 1.1.8 are not compatible with the current project format.</p></details>
         <details><summary>Which model formats can it open?</summary><p>STL, OBJ, 3MF, PLY, and OFF files are supported.</p></details>
         <details><summary>Does one license cover Windows and Mac?</summary><p>Yes. One purchase includes both downloads and activation on up to two computers. The Mac build currently requires Apple silicon.</p></details>
       </div>
