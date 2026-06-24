@@ -1,6 +1,6 @@
 # Scale & Cut 3D
 
-> Scale & Cut 3D is paid Windows and macOS desktop software for preparing oversized 3D models for printers with smaller build volumes.
+> Scale & Cut 3D is paid Windows and macOS desktop software that automatically turns oversized 3D models into cut, connected, plated 3MF projects for printers with smaller build volumes.
 
 Official website: https://scaleandcut3d.com/
 Price: $10 USD one-time purchase
@@ -18,7 +18,8 @@ Privacy: https://scaleandcut3d.com/privacy.html
 - Adds optional matching assembly codes to joined faces.
 - Can hollow a model and reduce tiny cut pieces before export.
 - Shows a combined exploded preview after cutting.
-- Exports projects for OrcaSlicer or Bambu Studio.
+- Automatically orients and arranges pieces across print plates.
+- Creates plated 3MF projects for OrcaSlicer or Bambu Studio.
 
 ## Supported files and systems
 
