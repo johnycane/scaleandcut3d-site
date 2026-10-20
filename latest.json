@@ -1,1 +1,1 @@
-{ "version": "1.4.3", "notes": "Much faster hollowing and peg placement, a clearer bug-report button, and update notifications." }
+{ "version": "1.4.4", "notes": "New Orientation step to stand models upright before sizing, a fix for a Windows crash while hollowing, and clearer feedback when generating plated files." }
