@@ -60,6 +60,9 @@ h1 em { color: var(--accent); font-style: normal; }
 .price-line strong { color: #ffce7a; font-family: var(--display); font-size: 29px; }
 .price-line span { padding: 5px 10px; border: 1px solid rgba(90,208,196,.3); border-radius: 100px; background: rgba(90,208,196,.1); color: var(--teal); font-size: 10px; font-weight: 700; text-transform: uppercase; }
 .requirements { margin: 10px 0 0; color: var(--dim); font-size: 12px; }
+.phone-note { margin: 14px 0 0; padding: 10px 12px; border: 1px solid rgba(90,208,196,.3); border-radius: 9px; background: rgba(90,208,196,.08); color: #cfe9e5; font-size: 14px; line-height: 1.45; }
+.phone-note strong { color: #fff; }
+.buy-panel > p.phone-note { margin: -8px 0 22px; color: #cfe9e5; text-align: left; }
 .hero-media { grid-area: media; width: 100%; max-width: 520px; margin: 0 0 0 auto; }
 .hero-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .hero-compare figure { margin: 0; min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: #111216; }
