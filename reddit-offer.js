@@ -1,18 +1,22 @@
-// Visitors from the Reddit ad (utm_source=reddit) get REDDIT10 pre-filled at
+// Visitors from the Reddit ad get REDDIT10 pre-filled at
 // checkout, so ad sales show up under that code in Lemon Squeezy.
 (function () {
   var CODE = "REDDIT10";
   var KEY = "sac-offer";
   var DAYS = 7;
   var active = false;
+  // The live ad's link carries utm_campaign=hand_test but no utm_source, so
+  // accept either marker.
+  var params = new URLSearchParams(location.search);
+  var fromReddit = params.get("utm_source") === "reddit" || params.get("utm_campaign") === "hand_test";
   try {
-    if (new URLSearchParams(location.search).get("utm_source") === "reddit") {
+    if (fromReddit) {
       localStorage.setItem(KEY, JSON.stringify({ code: CODE, until: Date.now() + DAYS * 864e5 }));
     }
     var saved = JSON.parse(localStorage.getItem(KEY) || "null");
     active = !!(saved && saved.code === CODE && saved.until > Date.now());
   } catch (e) {
-    active = new URLSearchParams(location.search).get("utm_source") === "reddit";
+    active = fromReddit;
   }
   if (!active) return;
 
