@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to Split a 3D Model Into Pieces for Bambu Lab Printers | Scale &amp; Cut 3D</title>
+  <meta name="description" content="Bed sizes for the Bambu Lab A1 mini, A1, P1P, P1S, X1 Carbon and H2D, how to cut a model by hand in Bambu Studio, and how to automate it for large prints.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://scaleandcut3d.com/guides/split-a-model-for-bambu-lab.html">
+  <link rel="icon" type="image/png" href="/sclice-logo.png">
+  <link rel="stylesheet" href="/guides/guide.css">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Scale &amp; Cut 3D">
+  <meta property="og:title" content="How to Split a 3D Model Into Pieces for Bambu Lab Printers | Scale &amp; Cut 3D">
+  <meta property="og:description" content="Bed sizes for the Bambu Lab A1 mini, A1, P1P, P1S, X1 Carbon and H2D, how to cut a model by hand in Bambu Studio, and how to automate it for large prints.">
+  <meta property="og:url" content="https://scaleandcut3d.com/guides/split-a-model-for-bambu-lab.html">
+  <meta property="og:image" content="https://scaleandcut3d.com/media/bambu-plates.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "How to split a 3D model into pieces for Bambu Lab printers",
+      "description": "Bed sizes for the Bambu Lab A1 mini, A1, P1P, P1S, X1 Carbon and H2D, how to cut a model by hand in Bambu Studio, and how to automate it for large prints.",
+      "image": "https://scaleandcut3d.com/media/bambu-plates.jpg",
+      "datePublished": "2026-10-22",
+      "dateModified": "2026-10-22",
+      "author": {
+        "@type": "Organization",
+        "name": "Scale & Cut 3D",
+        "url": "https://scaleandcut3d.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Scale & Cut 3D",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://scaleandcut3d.com/sclice-logo.png"
+        }
+      },
+      "mainEntityOfPage": "https://scaleandcut3d.com/guides/split-a-model-for-bambu-lab.html"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Bambu Studio have a cut tool?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Bambu Studio's Cut tool splits a model along a plane and can add connectors to the cut faces. It works well for a few cuts; large models with many pieces are faster with an automatic tool."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I mix an A1 mini with a larger Bambu printer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Plan the cuts around the larger printer, then print the pieces that fit on the A1 mini there. Scale &amp; Cut 3D routes each piece to the smallest selected printer it fits on."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will the project open in OrcaSlicer too?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. OrcaSlicer reads Bambu Studio projects, including the plate layout. Choose the right printer and filament profiles before slicing."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://scaleandcut3d.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "https://scaleandcut3d.com/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How to split a 3D model into pieces for Bambu Lab printers",
+          "item": "https://scaleandcut3d.com/guides/split-a-model-for-bambu-lab.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Scale and Cut 3D home"><img src="/sclice-logo.png" width="36" height="36" alt=""><span>Scale <b>&amp;</b> Cut 3D</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="/guides/">Guides</a>
+      <a href="/#how-it-works">How it works</a>
+      <a class="nav-buy" href="/#buy">Buy</a>
+    </nav>
+  </header>
+
+  <main class="article">
+    <p class="crumbs"><a href="/">Home</a> / <a href="/guides/">Guides</a></p>
+    <h1>How to split a 3D model into pieces for Bambu Lab printers</h1>
+    <p class="lead">Bambu Lab printers are fast and reliable, but a 256 mm bed still means large models have to be printed in pieces. Here's how big each piece can be, and two ways to split a model.</p>
+
+    <h2>How big can each piece be?</h2>
+    <p>These are the build volumes Bambu Lab lists. Plan pieces a little smaller than the bed, about 5 to 10 mm per side, to leave room for a brim and for pegs on the cut faces.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Printer</th><th scope="col">Build volume (W × D × H)</th></tr></thead>
+        <tbody>
+          <tr><td>A1 mini</td><td>180 × 180 × 180 mm</td></tr>
+          <tr><td>A1</td><td>256 × 256 × 256 mm</td></tr>
+          <tr><td>P1P / P1S</td><td>256 × 256 × 256 mm</td></tr>
+          <tr><td>X1 Carbon</td><td>256 × 256 × 256 mm</td></tr>
+          <tr><td>H2D</td><td>325 × 320 × 325 mm with one nozzle (300 × 320 × 325 mm using both)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>The H2D is sometimes listed as 350 mm wide, but that is the span of both nozzles together; a single print can only use 325 mm. Check the exact numbers for your setup in Bambu Studio's printer settings, since some printers keep small areas of the bed clear.</p>
+
+    <h2>Option 1: the Cut tool in Bambu Studio</h2>
+    <p>Bambu Studio has a built-in Cut tool. It suits models that need only a few cuts.</p>
+    <ol>
+      <li>Select the model on the plate and open the <strong>Cut</strong> tool from the toolbar.</li>
+      <li>Drag the cutting plane to where you want the cut, and rotate it if needed.</li>
+      <li>Optionally add connectors on the cut face, so the two halves line up when you join them.</li>
+      <li>Perform the cut, then repeat on each part that is still too big.</li>
+    </ol>
+    <p>OrcaSlicer has the same tool. The downside is scale: every cut is placed by hand. A model that needs more than a handful of cuts takes a long time, and it's easy to leave thin slivers that are hard to print and glue.</p>
+
+    <h2>Option 2: split it automatically</h2>
+    <p>For anything big, Scale &amp; Cut 3D does the whole job in one pass:</p>
+    <ul>
+      <li>Scales the model to the size you want, in mm, inches or feet.</li>
+      <li>Cuts it into pieces that fit the Bambu printers you select, even a mix like an A1 and an A1 mini.</li>
+      <li>Moves cuts to avoid thin slivers, and merges tiny pieces into their neighbours.</li>
+      <li>Adds alignment pegs on every seam and engraves each face with the number of the piece that goes there.</li>
+      <li>Lays the pieces flat and arranges them on plates, saved as Bambu Studio project files in build order.</li>
+    </ul>
+    <figure class="figure">
+      <img src="/media/bambu-plates.jpg" width="910" height="556" loading="lazy" alt="Bambu Studio with numbered plates of cut pieces">
+      <figcaption>A generated Bambu Studio project: pieces of a 6 ft skeleton hand on numbered plates, with pegs and part numbers visible.</figcaption>
+    </figure>
+    <div class="callout">
+      <p><strong>Before you print:</strong> generated projects use generic settings. Open the first plate, confirm the printer, nozzle, filament and plate type, slice it, and check the preview before printing the rest.</p>
+    </div>
+
+    <section class="cta" aria-labelledby="cta-title">
+      <h2 id="cta-title">Let the app do the cutting</h2>
+      <p>Scale &amp; Cut 3D scales your model, cuts it into pieces that fit your printer, adds alignment pegs and part numbers, and lays everything out on plates for Bambu Studio and OrcaSlicer. One purchase covers Windows and Mac.</p>
+      <a class="button" href="/#buy">See pricing <span aria-hidden="true">&rarr;</span></a>
+    </section>
+
+    <section class="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">Questions</h2>
+      <details><summary>Does Bambu Studio have a cut tool?</summary><p>Yes. Bambu Studio's Cut tool splits a model along a plane and can add connectors to the cut faces. It works well for a few cuts; large models with many pieces are faster with an automatic tool.</p></details>
+      <details><summary>Can I mix an A1 mini with a larger Bambu printer?</summary><p>Yes. Plan the cuts around the larger printer, then print the pieces that fit on the A1 mini there. Scale &amp; Cut 3D routes each piece to the smallest selected printer it fits on.</p></details>
+      <details><summary>Will the project open in OrcaSlicer too?</summary><p>Yes. OrcaSlicer reads Bambu Studio projects, including the plate layout. Choose the right printer and filament profiles before slicing.</p></details>
+    </section>
+
+    <aside class="related">
+      <h2>More guides</h2>
+      <ul>
+        <li><a href="/guides/print-bigger-than-your-printer.html">How to 3D print something bigger than your printer</a></li>
+        <li><a href="/guides/life-size-halloween-prop.html">How to 3D print a life-size Halloween prop</a></li>
+      </ul>
+    </aside>
+  </main>
+  <footer>
+    <a class="brand" href="/"><img src="/sclice-logo.png" width="28" height="28" alt=""><span>Scale <b>&amp;</b> Cut 3D</span></a>
+    <div><a href="/guides/">Guides</a><a href="/get-started.html">Getting started</a><a href="/support.html">Support</a><a href="/privacy.html">Privacy</a></div>
+    <p>&copy; 2026 Scale &amp; Cut 3D</p>
+  </footer>
+</body>
+</html>
