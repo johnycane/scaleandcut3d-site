@@ -119,6 +119,10 @@ h1 em { color: var(--accent); font-style: normal; }
 .buy-price { margin-top: 18px; display: flex; align-items: baseline; justify-content: center; gap: 9px; }
 .buy-price strong { color: #ffce7a; font-family: var(--display); font-size: 64px; line-height: 1; }
 .buy-price span { color: var(--dim); font-size: 12px; font-weight: 700; }
+.buy-price s { color: var(--dim); font-family: var(--display); font-size: 30px; }
+.launch-note { margin-top: 10px; color: var(--muted); font-size: 13px; font-weight: 700; }
+.price-line span.launch-badge, .launch-badge { padding: 7px 14px; border: 0; border-radius: 100px; background: var(--accent); color: var(--accent-ink); font-size: 14px; font-weight: 800; letter-spacing: .02em; text-transform: uppercase; box-shadow: 0 6px 24px rgba(244,167,58,.35); }
+.buy-panel > p.launch-badge.buy-badge { display: inline-block; margin: 14px 0 0; color: var(--accent-ink); font-size: 16px; }
 .buy-panel > p:not(.kicker) { margin: 12px 0 24px; color: var(--muted); }
 .buy-button { width: 100%; }
 .buy-panel ul { margin: 22px 0 0; padding: 18px 0 0; border-top: 1px solid var(--line); display: flex; justify-content: center; flex-wrap: wrap; gap: 9px 18px; list-style: none; color: #c7cedc; font-size: 12px; }
