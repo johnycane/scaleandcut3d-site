@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to 3D Print Something Bigger Than Your Printer | Scale &amp; Cut 3D</title>
+  <meta name="description" content="Split a large model into pieces that fit your print bed, join them with alignment pegs, and assemble a print many times bigger than your printer. Step-by-step guide.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://scaleandcut3d.com/guides/print-bigger-than-your-printer.html">
+  <link rel="icon" type="image/png" href="/sclice-logo.png">
+  <link rel="stylesheet" href="/guides/guide.css">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Scale &amp; Cut 3D">
+  <meta property="og:title" content="How to 3D Print Something Bigger Than Your Printer | Scale &amp; Cut 3D">
+  <meta property="og:description" content="Split a large model into pieces that fit your print bed, join them with alignment pegs, and assemble a print many times bigger than your printer. Step-by-step guide.">
+  <meta property="og:url" content="https://scaleandcut3d.com/guides/print-bigger-than-your-printer.html">
+  <meta property="og:image" content="https://scaleandcut3d.com/media/hand-yard.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "How to 3D print something bigger than your printer",
+      "description": "Split a large model into pieces that fit your print bed, join them with alignment pegs, and assemble a print many times bigger than your printer. Step-by-step guide.",
+      "image": "https://scaleandcut3d.com/media/hand-yard.jpg",
+      "datePublished": "2026-10-22",
+      "dateModified": "2026-10-22",
+      "author": {
+        "@type": "Organization",
+        "name": "Scale & Cut 3D",
+        "url": "https://scaleandcut3d.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Scale & Cut 3D",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://scaleandcut3d.com/sclice-logo.png"
+        }
+      },
+      "mainEntityOfPage": "https://scaleandcut3d.com/guides/print-bigger-than-your-printer.html"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How many pieces will my print need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Roughly the finished size divided by your bed size, in each direction. A 6 ft (1829 mm) skeleton hand on a 256 mm bed came out at 126 pieces after merging small slivers. A blocky model needs fewer pieces than one with lots of thin parts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use printers with different bed sizes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Plan the cuts for your largest printer, then send each piece to the smallest printer it fits on. Scale &amp; Cut 3D does this automatically when you select more than one printer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What glue should I use for PLA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Super glue (CA) works well for quick, small joints. For large seams that carry weight, use a two-part epoxy. Sand the faces lightly first so the glue grips."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need supports?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually far fewer than for the whole model. Each piece can lie on a flat cut face, so most need no supports at all. Pieces with overhangs, like a fingertip, may still need some."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://scaleandcut3d.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "https://scaleandcut3d.com/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How to 3D print something bigger than your printer",
+          "item": "https://scaleandcut3d.com/guides/print-bigger-than-your-printer.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Scale and Cut 3D home"><img src="/sclice-logo.png" width="36" height="36" alt=""><span>Scale <b>&amp;</b> Cut 3D</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="/guides/">Guides</a>
+      <a href="/#how-it-works">How it works</a>
+      <a class="nav-buy" href="/#buy">Buy</a>
+    </nav>
+  </header>
+
+  <main class="article">
+    <p class="crumbs"><a href="/">Home</a> / <a href="/guides/">Guides</a></p>
+    <h1>How to 3D print something bigger than your printer</h1>
+    <p class="lead">Your print bed sets the size of each piece, not the size of the finished print. Cut the model into parts that fit, print them, and join them. Here's how to do each step so the parts line up and the seams hold.</p>
+
+    <figure class="figure">
+      <img src="/media/hand-yard.jpg" width="853" height="1500" alt="A 6 ft 3D printed skeleton hand standing in a yard">
+      <figcaption>This skeleton hand is 6 ft tall. It was printed in 126 pieces on a Bambu Lab P1P and A1, each with a 256 mm bed.</figcaption>
+    </figure>
+
+    <h2>1. Decide the finished size</h2>
+    <p>Pick one measurement you care about, usually the height, and scale the model to it. Everything else follows from that scale.</p>
+    <ul>
+      <li><strong>Check which way is up.</strong> Many models are saved lying on their back, so the slicer's "height" is really the depth. Stand the model upright before you scale it, or you can end up twice as big as you meant.</li>
+      <li><strong>Check the other two sizes.</strong> A 5 ft character can be 4 ft wide once its arms are out. Make sure it fits where it's going.</li>
+      <li><strong>Estimate the material.</strong> Volume grows with the cube of the scale: twice as tall uses roughly eight times the filament. Hollowing (step 4) is what keeps big prints affordable.</li>
+    </ul>
+
+    <h2>2. Split the model into pieces</h2>
+    <p>Each piece has to fit your bed with a little room to spare. Leave about 5 to 10 mm around the edges for the brim and for pegs that stick out of the cut faces.</p>
+    <h3>By hand in your slicer</h3>
+    <p>Bambu Studio, OrcaSlicer and PrusaSlicer all have a Cut tool. You place a cutting plane, choose which side to keep, and repeat. It's free and works well for a model that needs two to five cuts. For a large model it gets slow: every cut is placed by hand, and a 6 ft print can need well over a hundred pieces.</p>
+    <h3>Automatically</h3>
+    <p>A dedicated tool can plan every cut at once. Scale &amp; Cut 3D cuts the model on a grid sized to your printer, then moves the cuts so you don't end up with thin slivers, and merges any tiny leftover pieces into their neighbours.</p>
+    <figure class="figure">
+      <img src="/media/app-exploded.jpg" width="900" height="628" loading="lazy" alt="Exploded view of a skeleton hand cut into colored pieces">
+      <figcaption>The same hand in Scale &amp; Cut 3D, cut into pieces that each fit a 256 mm bed.</figcaption>
+    </figure>
+
+    <h2>3. Add pegs so the pieces line up</h2>
+    <p>Glue alone holds, but it won't line pieces up. Small offsets add up across a big print. Alignment pegs fix that: one piece gets a peg, the matching face gets a socket, and the two can only meet one way.</p>
+    <ul>
+      <li><strong>Leave clearance.</strong> A peg printed at the exact socket size won't fit. Around 0.1 to 0.2 mm of clearance per side is a good starting point for a snug fit in PLA; add a little more if you plan to glue.</li>
+      <li><strong>Keep pegs away from edges.</strong> On thin walls a socket can break through to the outside. Use smaller pegs there, or skip them.</li>
+      <li><strong>Number the faces.</strong> With dozens of similar parts, a number on each cut face that says which piece goes there saves a lot of guessing.</li>
+    </ul>
+    <figure class="figure">
+      <img src="/media/app-pegs.jpg" width="900" height="628" loading="lazy" alt="Cut faces with alignment pegs and an engraved part number">
+      <figcaption>Pegs and sockets on matching faces, with the number of the piece that goes there engraved into the cut.</figcaption>
+    </figure>
+
+    <h2>4. Hollow it to save filament</h2>
+    <p>Slicer infill already leaves the inside mostly empty, but at large sizes even 10% infill adds up to a lot of plastic and print time. Hollowing the model first, so each piece is a shell with a set wall thickness, cuts that down a lot. For big display props, walls of 1 to 2 inches (25 to 50 mm) are plenty. The pieces still need solid material where they join, so give the cut faces enough wall for the pegs.</p>
+
+    <h2>5. Lay out the plates and print</h2>
+    <p>Lay each piece flat on its largest cut face where you can; that face is flat, so it prints without supports. Group pieces by printer if your printers have different bed sizes, and print in the order you'll assemble so you can start gluing while the rest prints.</p>
+    <figure class="figure">
+      <img src="/media/bambu-plates.jpg" width="910" height="556" loading="lazy" alt="Bambu Studio with numbered plates of cut pieces">
+      <figcaption>Pieces laid out on numbered plates in Bambu Studio, flat sides down.</figcaption>
+    </figure>
+    <div class="callout">
+      <p><strong>Check your slicer settings before printing.</strong> Generated project files can't know your exact printer, nozzle, filament and plate. Open the first plate, confirm the printer profile and filament, slice it, and look at the preview before you queue the rest.</p>
+    </div>
+
+    <h2>6. Assemble and finish</h2>
+    <ul>
+      <li><strong>Dry-fit first.</strong> Press pieces together without glue to check the fit. Trim or sand any peg that binds.</li>
+      <li><strong>Glue in sections.</strong> Build a few sub-assemblies, like each finger of a hand, then join those. Super glue (CA) is fast for small joints; two-part epoxy is stronger for big, load-bearing seams.</li>
+      <li><strong>Hide the seams.</strong> Fill gaps with a filler putty, sand, then use a filler primer before painting.</li>
+    </ul>
+
+    <section class="cta" aria-labelledby="cta-title">
+      <h2 id="cta-title">Let the app do the cutting</h2>
+      <p>Scale &amp; Cut 3D scales your model, cuts it into pieces that fit your printer, adds alignment pegs and part numbers, and lays everything out on plates for Bambu Studio and OrcaSlicer. One purchase covers Windows and Mac.</p>
+      <a class="button" href="/#buy">See pricing <span aria-hidden="true">&rarr;</span></a>
+    </section>
+
+    <section class="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">Questions</h2>
+      <details><summary>How many pieces will my print need?</summary><p>Roughly the finished size divided by your bed size, in each direction. A 6 ft (1829 mm) skeleton hand on a 256 mm bed came out at 126 pieces after merging small slivers. A blocky model needs fewer pieces than one with lots of thin parts.</p></details>
+      <details><summary>Can I use printers with different bed sizes?</summary><p>Yes. Plan the cuts for your largest printer, then send each piece to the smallest printer it fits on. Scale &amp; Cut 3D does this automatically when you select more than one printer.</p></details>
+      <details><summary>What glue should I use for PLA?</summary><p>Super glue (CA) works well for quick, small joints. For large seams that carry weight, use a two-part epoxy. Sand the faces lightly first so the glue grips.</p></details>
+      <details><summary>Do I need supports?</summary><p>Usually far fewer than for the whole model. Each piece can lie on a flat cut face, so most need no supports at all. Pieces with overhangs, like a fingertip, may still need some.</p></details>
+    </section>
+
+    <aside class="related">
+      <h2>More guides</h2>
+      <ul>
+        <li><a href="/guides/split-a-model-for-bambu-lab.html">How to split a 3D model for Bambu Lab printers</a></li>
+        <li><a href="/guides/life-size-halloween-prop.html">How to 3D print a life-size Halloween prop</a></li>
+      </ul>
+    </aside>
+  </main>
+  <footer>
+    <a class="brand" href="/"><img src="/sclice-logo.png" width="28" height="28" alt=""><span>Scale <b>&amp;</b> Cut 3D</span></a>
+    <div><a href="/guides/">Guides</a><a href="/get-started.html">Getting started</a><a href="/support.html">Support</a><a href="/privacy.html">Privacy</a></div>
+    <p>&copy; 2026 Scale &amp; Cut 3D</p>
+  </footer>
+</body>
+</html>
