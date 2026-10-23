@@ -1,4 +1,1 @@
-{
-  "version": "1.4.5",
-  "notes": "What's new:\n• Stand models upright before sizing: new Tip forward / Tip sideways / Turn buttons\n• Fixed a crash on Windows while hollowing\n• \"Generate plated files\" now shows that it's working\n• Bambu H2D: pieces always fit a nozzle's reach, so plates slice reliably"
-}
+{ "version": "1.4.4", "notes": "New Orientation step to stand models upright before sizing, a fix for a Windows crash while hollowing, and clearer feedback when generating plated files." }
