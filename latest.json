@@ -1,1 +1,4 @@
-{ "version": "1.4.4", "notes": "New Orientation step to stand models upright before sizing, a fix for a Windows crash while hollowing, and clearer feedback when generating plated files." }
+{
+  "version": "1.4.6",
+  "notes": "What's new:\n• Stand models upright before sizing (new Orientation step)\n• Finds Bambu Studio, Orca and Prusa installed on any drive, with a Locate button if needed\n• Clear message when a model's folder is too deep for Windows\n• Fixed a crash on Windows while hollowing, and a cut that could start without its model\n• \"Generate plated files\" now shows that it's working\n• Bambu H2D: pieces always fit a nozzle's reach"
+}
