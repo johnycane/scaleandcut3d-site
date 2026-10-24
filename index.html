@@ -123,29 +123,27 @@
       <h1>Software that cuts big 3D models into pieces your printer can handle</h1>
       <figure class="lead-photo">
         <img src="/media/hand-unpainted.jpg" width="840" height="1122" alt="A 6 foot 3D printed skeleton hand, unpainted, on a garden cart in the yard">
-        <figcaption>This year's build before paint: a 6 foot skeleton hand groundbreaker, printed on a P1P and an A1.</figcaption>
+        <figcaption>This year's giant Halloween print, before paint.</figcaption>
       </figure>
       <div class="words">
-        <p>Every year I build giant Halloween props for our yard, and every one of them gets printed on a regular Bambu P1P and A1. Up until this year I cut all of my big prints by hand. That means sitting in the slicer making cut after cut, trying to line up connectors, then arranging every piece onto plates. I tried Luban3D and other cutting tools to speed it up and got extremely frustrated with all of them.</p>
-        <p>So for this year's build I made my own software that does it for me. You open a model, tell it how big you want it, pick your printers, and it cuts the whole thing into pieces that fit. It puts pegs on every seam so the pieces line up, engraves numbers so you know what goes where, and lays everything out on plates for Bambu Studio or OrcaSlicer.</p>
-        <p>The hand came out to 126 pieces. A few were too big for the P1P because of the little corner it keeps clear, so the app sent those to the A1 instead. It worked well enough that I'm selling it now for $10.</p>
+        <p>Printed on a P1P and A1. 6 foot tall skeleton hand groundbreaker. I usually hand cut my big prints, but this year I made my own software that does it for me after being extremely frustrated with Luban3D and other cutting tools.</p>
+        <p>It's $10 if you're interested in checking it out.</p>
       </div>
       <div class="actions">
-        <a class="btn" href="#buy">Buy it for $10</a>
+        <a class="btn" href="#buy">Buy for $10</a>
         <a class="btn plain" href="#how-it-works">Watch it work</a>
       </div>
-      <p class="small">$10 until November 15, then $20. Windows 10+ and Apple silicon Macs. You also need Bambu Studio or OrcaSlicer (both free).</p>
-      <p class="phone-note">On your phone? You can buy now and install later. The download link and license key get emailed to you.</p>
+      <p class="small">$10 until Nov 15, then $20. Windows or Apple silicon Mac. Needs Bambu Studio or OrcaSlicer (free).</p>
+      <p class="phone-note">On your phone? Buy now, install later. The download and license key get emailed to you.</p>
     </section>
 
     <section class="block" id="made-with">
-      <h2>Some of my older builds, cut by hand</h2>
-      <p>These were all done the slow way, before the app existed. This is the kind of thing it's made for.</p>
+      <h2>Older builds I cut by hand</h2>
       <div class="two">
         <figure><img src="/media/build-clown-box.jpg" width="850" height="1500" loading="lazy" alt="A giant clown jack-in-the-box Halloween prop with 3D printed head and hands"><figcaption>Jack in the box</figcaption></figure>
         <figure><img src="/media/build-pumpkin.jpg" width="1000" height="1333" loading="lazy" alt="A giant two-headed monster pumpkin Halloween prop on a garden cart"><figcaption>Monster pumpkins</figcaption></figure>
       </div>
-      <p>More of our Halloween stuff and the builds is on my TikTok, <a href="https://www.tiktok.com/@cane.prints" target="_blank" rel="noopener">@cane.prints</a>.</p>
+      <p>More on my TikTok, <a href="https://www.tiktok.com/@cane.prints" target="_blank" rel="noopener">@cane.prints</a>.</p>
     </section>
 
     <section class="block" id="how-it-works">
@@ -154,29 +152,34 @@
         <iframe src="https://www.youtube-nocookie.com/embed/dpoS-jl1LX4?rel=0" title="How Scale and Cut 3D works" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       <p class="small">Video not loading? <a href="https://www.youtube.com/watch?v=dpoS-jl1LX4" target="_blank" rel="noopener">Watch it on YouTube</a>.</p>
-      <p>Open your model (STL, OBJ, 3MF, PLY or OFF). If it was saved lying down you can stand it up first. Set the size you want in mm, inches or feet, and pick your printers. You can pick more than one, even with different bed sizes.</p>
-      <p>Hit cut and look over the pieces in the exploded view. If it looks right, generate the plates and open them in Bambu Studio or OrcaSlicer. Pick your filament and settings like you normally would, then slice and print.</p>
+      <ul class="facts">
+        <li>Open an STL, OBJ, 3MF, PLY or OFF file</li>
+        <li>Set the size in mm, inches or feet</li>
+        <li>Pick your printers (mixing bed sizes is fine)</li>
+        <li>It cuts the model to fit, with pegs and part numbers on every seam</li>
+        <li>Generate plates and open them in Bambu Studio or OrcaSlicer</li>
+        <li>Optional hollowing to save filament</li>
+      </ul>
       <div class="two">
-        <figure><img src="/media/app-exploded.jpg" width="900" height="628" loading="lazy" alt="The skeleton hand split into colored pieces in the app"><figcaption>The hand in the app, split into pieces</figcaption></figure>
-        <figure><img src="/media/app-pegs.jpg" width="900" height="628" loading="lazy" alt="Cut faces with alignment pegs and an engraved part number"><figcaption>Pegs and part numbers on the cut faces</figcaption></figure>
+        <figure><img src="/media/app-exploded.jpg" width="900" height="628" loading="lazy" alt="The skeleton hand split into colored pieces in the app"><figcaption>The hand, cut into 126 pieces</figcaption></figure>
+        <figure><img src="/media/app-pegs.jpg" width="900" height="628" loading="lazy" alt="Cut faces with alignment pegs and an engraved part number"><figcaption>Pegs and part numbers</figcaption></figure>
       </div>
-      <p>You can also hollow pieces to save filament, and tiny slivers get merged into the piece next to them so you're not printing a bunch of little scraps.</p>
     </section>
 
     <section class="block faq">
-      <h2>Questions people have asked</h2>
-      <details><summary>Which slicers does it work with?</summary><p>Bambu Studio and OrcaSlicer, plus slicers built on Orca like QIDI Studio and ElegooSlicer. PrusaSlicer can open the pieces too. Cura can import the pieces but won't get the plate layout.</p></details>
-      <details><summary>How big can I go?</summary><p>There isn't a set limit. It just makes more pieces. It shows you the finished size in every direction before cutting so you can double check it.</p></details>
-      <details><summary>Can I use two printers with different bed sizes?</summary><p>Yes. It plans the cuts around the bigger printer and sends each piece to the smallest printer it fits on. That's how the hand got split between my P1P and A1.</p></details>
-      <details><summary>Does one license cover Windows and Mac?</summary><p>Yes. You get both downloads and can activate it on two computers. The Mac version needs an Apple silicon Mac.</p></details>
-      <details><summary>What if my model is broken?</summary><p>It fixes small problems on its own. If a model is too damaged it'll tell you, and you can repair it in Bambu Studio first (right-click the model, Fix model).</p></details>
+      <h2>Questions</h2>
+      <details><summary>Which slicers does it work with?</summary><p>Bambu Studio, OrcaSlicer, and Orca-based ones like QIDI Studio and ElegooSlicer. PrusaSlicer works too.</p></details>
+      <details><summary>How big can I go?</summary><p>No set limit. Bigger just means more pieces.</p></details>
+      <details><summary>Can I use two printers with different bed sizes?</summary><p>Yes. Each piece goes to the smallest printer it fits on. The hand was split between my P1P and A1.</p></details>
+      <details><summary>Does one license cover Windows and Mac?</summary><p>Yes, both downloads, two computers. Mac needs Apple silicon.</p></details>
+      <details><summary>What if my model is broken?</summary><p>Small problems get fixed automatically. If it's too damaged, fix it in Bambu Studio first (right-click, Fix model).</p></details>
     </section>
 
     <section class="block buy" id="buy">
       <h2>Get Scale &amp; Cut 3D</h2>
       <p class="price">$10 <span>until November 15, then $20</span></p>
-      <p>One-time purchase. Windows and Mac downloads, two computer activations, license key emailed to you.</p>
-      <p class="phone-note">Buying on your phone? Everything gets emailed, so you can install it on your computer later.</p>
+      <p>One-time purchase. Windows and Mac, two computers.</p>
+      
       <a class="btn big" href="https://caneprints.lemonsqueezy.com/checkout/buy/68783033-7123-44ac-8ecc-c4909757244d">Buy through Lemon Squeezy</a>
       <p class="small">Checkout is handled by Lemon Squeezy. Questions or problems? Email <a href="mailto:johnyprints@gmail.com">johnyprints@gmail.com</a>.</p>
     </section>
