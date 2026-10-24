@@ -3,7 +3,7 @@
 > Scale & Cut 3D is paid Windows and macOS desktop software that automatically turns oversized 3D models into cut, connected, plated 3MF projects for printers with smaller build volumes.
 
 Official website: https://scaleandcut3d.com/
-Price: $10 USD one-time purchase
+Price: $20 USD one-time purchase
 Purchase: https://caneprints.lemonsqueezy.com/checkout/buy/68783033-7123-44ac-8ecc-c4909757244d
 Support: https://scaleandcut3d.com/support.html
 Getting started: https://scaleandcut3d.com/get-started.html
