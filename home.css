@@ -56,8 +56,12 @@ figcaption { margin-top: 8px; color: var(--soft); font-size: 14px; }
 .faq summary { cursor: pointer; font-weight: 600; }
 .faq details p { margin: 8px 0 4px; color: var(--soft); }
 
-.buy .price { font-size: 34px; font-weight: 700; margin-bottom: 8px; }
-.buy .price span { font-size: 16px; font-weight: 400; color: var(--soft); }
+.sale { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin: 0 0 12px; }
+.sale s { color: var(--soft); font-size: 22px; }
+.sale strong { font-size: 30px; }
+.sale span { color: var(--orange-dark); font-weight: 700; }
+.sale.big s { font-size: 28px; }
+.sale.big strong { font-size: 42px; }
 
 footer { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 60px; padding-block: 24px 40px; border-top: 1px solid var(--rule); font-size: 14px; color: var(--soft); }
 footer span { margin-right: auto; font-weight: 600; color: var(--ink); }
