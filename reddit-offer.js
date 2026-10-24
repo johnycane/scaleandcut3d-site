@@ -30,7 +30,7 @@
   banner.setAttribute("role", "status");
   banner.style.cssText = "position:sticky;top:0;z-index:100;padding:10px 16px;text-align:center;" +
     "background:#f4a73a;color:#291604;font:600 14px/1.4 system-ui,-apple-system,sans-serif;";
-  banner.innerHTML = 'Reddit special: <strong>10% off</strong>, applied automatically at checkout ' +
+  banner.innerHTML = 'Reddit visitors get an <strong>extra 10% off</strong> at checkout ' +
     '(<a href="#buy" style="color:inherit;text-decoration:underline">buy now</a>)';
   document.body.insertBefore(banner, document.body.firstChild);
 })();
