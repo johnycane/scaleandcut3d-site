@@ -50,7 +50,10 @@
     if (!link) return;
     var href = link.getAttribute("href") || "";
     if (href.indexOf("lemonsqueezy.com/checkout/buy/") !== -1) {
-      count("click: checkout");
+      // Every buy button goes straight to checkout; note which one it was.
+      var where = link.classList.contains("nav-buy") ? "top bar"
+        : link.closest(".intro") ? "top" : link.closest("[role=status]") ? "banner" : "bottom";
+      count("click: checkout (" + where + ")");
     } else if (href === "#buy" || href === "/#buy") {
       count(link.classList.contains("nav-buy") ? "click: buy (top bar)" : "click: buy (hero)");
     } else if (href === "#how-it-works") {

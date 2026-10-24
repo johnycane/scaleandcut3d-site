@@ -30,7 +30,8 @@
   banner.setAttribute("role", "status");
   banner.style.cssText = "position:sticky;top:0;z-index:100;padding:10px 16px;text-align:center;" +
     "background:#f4a73a;color:#291604;font:600 14px/1.4 system-ui,-apple-system,sans-serif;";
+  var checkout = "https://caneprints.lemonsqueezy.com/checkout/buy/68783033-7123-44ac-8ecc-c4909757244d?checkout%5Bdiscount_code%5D=" + CODE;
   banner.innerHTML = 'Reddit visitors get an <strong>extra 10% off</strong> at checkout ' +
-    '(<a href="#buy" style="color:inherit;text-decoration:underline">buy now</a>)';
+    '(<a href="' + checkout + '" style="color:inherit;text-decoration:underline">buy now</a>)';
   document.body.insertBefore(banner, document.body.firstChild);
 })();
