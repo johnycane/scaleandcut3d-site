@@ -10,6 +10,11 @@
   var params = new URLSearchParams(location.search);
   var fromReddit = params.get("utm_source") === "reddit" || params.get("utm_campaign") === "hand_test";
   try {
+    // ?offer=off forgets the offer in this browser (for checking the normal site).
+    if (params.get("offer") === "off") {
+      localStorage.removeItem(KEY);
+      return;
+    }
     if (fromReddit) {
       localStorage.setItem(KEY, JSON.stringify({ code: CODE, until: Date.now() + DAYS * 864e5 }));
     }
