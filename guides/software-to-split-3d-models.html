@@ -120,13 +120,13 @@
     <h2>Quick comparison</h2>
     <div class="table-wrap">
       <table>
-        <thead><tr><th scope="col">Tool</th><th scope="col">Price</th><th scope="col">Cuts placed</th><th scope="col">Connectors</th><th scope="col">Plates laid out</th><th scope="col">Runs on</th></tr></thead>
+        <thead><tr><th scope="col">Tool</th><th scope="col">Price</th><th scope="col">Cuts placed</th><th scope="col">Connectors</th><th scope="col">Plates laid out</th><th scope="col">Assembly help</th><th scope="col">Runs on</th></tr></thead>
         <tbody>
-          <tr><td>Slicer cut tool (Bambu Studio, OrcaSlicer, PrusaSlicer)</td><td>Free</td><td>By hand, one at a time</td><td>Yes</td><td>You arrange them</td><td>Windows, Mac, Linux</td></tr>
-          <tr><td>Blender add-ons (e.g. Bed Fit Splitter)</td><td>Blender is free, add-ons about $19</td><td>Automatic or by hand, depending on the add-on</td><td>Yes (dowels)</td><td>No</td><td>Wherever Blender runs</td></tr>
-          <tr><td>Split3r</td><td>€60 Basic, €95 Full, one-time</td><td>Automatic, with manual control</td><td>Yes (tenons)</td><td>Not listed</td><td>Windows, Mac, Linux</td></tr>
-          <tr><td>LuBan 3D</td><td>$30/month, $150/year or $750 lifetime</td><td>Automatic</td><td>Yes</td><td>Not listed</td><td>Windows, Mac</td></tr>
-          <tr><td>Scale &amp; Cut 3D</td><td>$20 one-time</td><td>Automatic</td><td>Yes (pegs)</td><td>Yes, in build order</td><td>Windows, Apple silicon Mac</td></tr>
+          <tr><td>Slicer cut tool (Bambu Studio, OrcaSlicer, PrusaSlicer)</td><td>Free</td><td>By hand, one at a time</td><td>Yes</td><td>You arrange them</td><td>None</td><td>Windows, Mac, Linux</td></tr>
+          <tr><td>Blender add-ons (e.g. Bed Fit Splitter)</td><td>Blender is free, add-ons about $19</td><td>Automatic or by hand, depending on the add-on</td><td>Yes (dowels)</td><td>No</td><td>Varies (Bed Fit Splitter writes a text print plan)</td><td>Wherever Blender runs</td></tr>
+          <tr><td>Split3r</td><td>€60 Basic, €95 Full, one-time</td><td>Automatic, with manual control</td><td>Yes (tenons)</td><td>No</td><td>Numbered parts</td><td>Windows, Mac, Linux</td></tr>
+          <tr><td>LuBan 3D</td><td>$30/month, $150/year or $750 lifetime</td><td>Automatic</td><td>Yes</td><td>No</td><td>Numbered parts</td><td>Windows, Mac</td></tr>
+          <tr><td>Scale &amp; Cut 3D</td><td>$20 one-time</td><td>Automatic</td><td>Yes (pegs)</td><td>Yes, in build order</td><td>Numbers on every face, plus a step-by-step build guide</td><td>Windows, Apple silicon Mac</td></tr>
         </tbody>
       </table>
     </div>
@@ -154,7 +154,8 @@
       <li>Cuts it into pieces that fit your printers, even a mix of bed sizes, and merges tiny slivers into their neighbours.</li>
       <li>Adds alignment pegs on every seam and engraves each face with the number of the piece that goes there.</li>
       <li>Can hollow the model to save filament.</li>
-      <li>Lays everything out on plates in build order, as Bambu Studio, OrcaSlicer or PrusaSlicer projects.</li>
+      <li>Lays everything out on plates in build order, as Bambu Studio, OrcaSlicer or PrusaSlicer projects. Split3r and LuBan 3D cut the model, but you still arrange the pieces on plates yourself.</li>
+      <li>Writes an assembly guide: every piece in build order, which plate it's on, which direction it slides in, and what it glues to.</li>
     </ul>
     <p>It's $20 one-time for Windows and Mac, on up to two computers.</p>
     <p><strong>Limits, honestly:</strong> cuts are straight and placed automatically, so you can't yet pick where each one goes, and a seam can land across a detailed area like a face. There's no Linux or Intel Mac version. It's also new, so there are fewer reviews than for the older tools.</p>
@@ -163,7 +164,7 @@
     <ul>
       <li><strong>A few cuts:</strong> your slicer's free cut tool.</li>
       <li><strong>You already live in Blender:</strong> a Blender add-on.</li>
-      <li><strong>Lots of pieces, and you want plates ready to print for a low price:</strong> Scale &amp; Cut 3D.</li>
+      <li><strong>Lots of pieces, and you want plates ready to print and a build guide, for a low price:</strong> Scale &amp; Cut 3D.</li>
       <li><strong>Lots of manual control, or Linux:</strong> Split3r.</li>
       <li><strong>Professional use with a budget to match:</strong> LuBan 3D.</li>
     </ul>

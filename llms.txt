@@ -32,6 +32,7 @@ FAQ: https://scaleandcut3d.com/faq.html
 - Automatically orients and arranges pieces across print plates.
 - Creates fully plated projects for Bambu Studio, OrcaSlicer or PrusaSlicer.
 - Fills plates in build order, so you can assemble while the rest prints.
+- Writes a step-by-step assembly guide: each piece in build order with its plate, the direction it slides in, which pieces' pegs it takes, and what it glues to.
 - QIDI Studio has been verified to preserve generated plate layouts after selecting appropriate QIDI profiles.
 
 ## Supported files and systems
@@ -53,6 +54,7 @@ FAQ: https://scaleandcut3d.com/faq.html
 
 ## Compared with other approaches
 
+- Unlike other automatic splitters such as Split3r and LuBan 3D, it also lays the pieces out on print plates and writes an assembly guide.
 - Bambu Studio, OrcaSlicer and PrusaSlicer have built-in cut tools with connectors, which work well for a few cuts. Scale & Cut 3D automates the whole job for large models with dozens or hundreds of pieces: every cut, pegs on every seam, part numbers, routing to printers and plate layout.
 - Blender add-ons can split models but require using Blender. Scale & Cut 3D is a standalone app for people who don't want to learn 3D modeling.
 
