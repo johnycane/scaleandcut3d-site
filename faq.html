@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scale &amp; Cut 3D FAQ: cutting big models into printable pieces</title>
+  <meta name="description" content="Answers about Scale &amp; Cut 3D: what it does, pegs and assembly, supported printers and slicers, file types, computers, privacy and buying.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://scaleandcut3d.com/faq.html">
+  <link rel="icon" type="image/png" href="/logo-96.png">
+  <link rel="stylesheet" href="/site.css?v=5">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Scale &amp; Cut 3D">
+  <meta property="og:title" content="Scale &amp; Cut 3D FAQ: cutting big models into printable pieces">
+  <meta property="og:description" content="Answers about Scale &amp; Cut 3D: what it does, pegs and assembly, supported printers and slicers, file types, computers, privacy and buying.">
+  <meta property="og:url" content="https://scaleandcut3d.com/faq.html">
+  <meta property="og:image" content="https://scaleandcut3d.com/media/og-hand.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does Scale & Cut 3D do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You open a 3D model and tell it how big you want it. It scales the model, cuts it into pieces that fit your printer, adds alignment pegs and part numbers, and lays the pieces out on plates ready to open in Bambu Studio, OrcaSlicer or PrusaSlicer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is it different from the Cut tool in my slicer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The slicer's Cut tool makes one cut at a time, placed by hand. That's fine for a few cuts. Scale & Cut 3D does every cut, every peg, the part numbers and the plate layout in one go, which matters when a model needs dozens or hundreds of pieces."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to know 3D modeling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. If you can open a file in your slicer, you can use this."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How big can I print?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There's no set limit. A bigger print just means more pieces. The app shows the finished size in every direction before it cuts, so you can check it's what you meant."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cutting usually takes seconds to a couple of minutes. Hollowing and generating plates take longer on big models, because your slicer arranges each plate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I choose where the cuts go?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not yet. Cuts are straight and placed automatically to fit your printer, so look over the exploded preview before you print and check no seam lands somewhere you'll see it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if the model was saved lying down?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There's an Orientation step to stand it upright before you set the size, so the height you enter is the real height."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can it hollow models?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Hollowing is optional and you set the wall thickness. It saves a lot of filament on big solid models."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do the pieces connect?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every seam gets alignment pegs on one side and matching sockets on the other. Choose press fit for a tight, glue-free fit, or glue fit for a looser fit you glue. Pegs are sized down on small pieces and skipped where they won't fit safely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know which piece goes where?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each cut face is engraved with the number of the piece that joins it. Plates are filled in build order, so you can start assembling while the rest prints."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to tiny pieces?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Small slivers are merged into the piece next to them, as long as the result still fits your printer. You can set what counts as small."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I still need glue?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For most props, yes, use pegs to line pieces up and glue to hold them. Heavy pieces also benefit from a rod or pipe through the middle."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which printers does it work with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Any FDM printer you can slice for in Bambu Studio, OrcaSlicer or PrusaSlicer. Presets are built in for Bambu Lab (A1 mini, A1, P1P, P1S, X1 Carbon, X1E, H2D, H2D Pro, H2S), Prusa (MK4S, CORE One, XL), Creality (K1C, K2 Plus, Ender-3 V3), Elegoo Centauri Carbon, Anycubic Kobra 3 and Qidi (Q1 Pro, X-Max 3), and you can add a custom bed size."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use two printers with different bed sizes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Cuts are planned around the biggest printer, then each piece goes to the smallest printer it fits on."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which slicers do I need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bambu Studio, OrcaSlicer or PrusaSlicer, all free. The app uses one of them to lay out the plates. The finished projects also open in Orca-based slicers like QIDI Studio and ElegooSlicer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which file types can it open?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "STL, OBJ, 3MF, PLY and OFF."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if my model is damaged?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Small problems like holes and flipped faces are fixed automatically. If a model is too damaged, the app tells you, and you can repair it first, for example with Fix model in Bambu Studio on Windows."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What computers does it run on?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Windows 10 or newer, and Macs with Apple silicon (M1 or newer) on macOS 12 or newer. There's no Linux or Intel Mac version."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it need the internet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only to activate your license and check it now and then. It keeps working offline for up to seven days between checks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are my models uploaded anywhere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Models and the files the app makes stay on your computer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "$20, one-time. No subscription."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does one purchase cover Windows and Mac?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You get both downloads and can activate it on two computers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do I find my download and license key?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They're emailed to you right after checkout. You can also get them any time from Lemon Squeezy's My Orders page."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I buy on my phone and install later?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Everything is emailed to you, so you can install it on your computer whenever you're ready."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are updates free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "So far every update has been free for existing customers. The app tells you when a new version is out."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I move it to a new computer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open the License window in the app and choose Deactivate this computer, then activate on the new one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I have a question that isn't here.",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Email johnyprints@gmail.com. You'll get an answer from the person who made it."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header class="top">
+    <a class="name" href="/"><img src="/logo-96.png" width="32" height="32" alt=""><span class="name-text">Scale &amp; Cut 3D</span></a>
+    <nav>
+      <a class="wide-only" href="/guides/">Guides</a>
+      <a class="wide-only" href="/#how-it-works">How it works</a>
+      <a class="nav-buy" href="https://caneprints.lemonsqueezy.com/checkout/buy/68783033-7123-44ac-8ecc-c4909757244d" data-goatcounter-click="click: checkout (guide)" data-reddit="50% off · $10">Buy · $20</a>
+    </nav>
+  </header>
+
+  <main class="article">
+    <p class="crumbs"><a href="/">Home</a> / FAQ</p>
+    <h1>Questions about Scale &amp; Cut 3D</h1>
+    <p class="lead">Everything people usually ask before and after buying. Can't find yours? <a href="mailto:johnyprints@gmail.com">Email me</a>.</p>
+    <section class="faq">
+      <h2>What it does</h2>
+      <details><summary>What does Scale &amp; Cut 3D do?</summary><p>You open a 3D model and tell it how big you want it. It scales the model, cuts it into pieces that fit your printer, adds alignment pegs and part numbers, and lays the pieces out on plates ready to open in Bambu Studio, OrcaSlicer or PrusaSlicer.</p></details>
+      <details><summary>How is it different from the Cut tool in my slicer?</summary><p>The slicer's Cut tool makes one cut at a time, placed by hand. That's fine for a few cuts. Scale &amp; Cut 3D does every cut, every peg, the part numbers and the plate layout in one go, which matters when a model needs dozens or hundreds of pieces.</p></details>
+      <details><summary>Do I need to know 3D modeling?</summary><p>No. If you can open a file in your slicer, you can use this.</p></details>
+      <details><summary>How big can I print?</summary><p>There's no set limit. A bigger print just means more pieces. The app shows the finished size in every direction before it cuts, so you can check it's what you meant.</p></details>
+      <details><summary>How long does it take?</summary><p>Cutting usually takes seconds to a couple of minutes. Hollowing and generating plates take longer on big models, because your slicer arranges each plate.</p></details>
+      <details><summary>Can I choose where the cuts go?</summary><p>Not yet. Cuts are straight and placed automatically to fit your printer, so look over the exploded preview before you print and check no seam lands somewhere you'll see it.</p></details>
+      <details><summary>What if the model was saved lying down?</summary><p>There's an Orientation step to stand it upright before you set the size, so the height you enter is the real height.</p></details>
+      <details><summary>Can it hollow models?</summary><p>Yes. Hollowing is optional and you set the wall thickness. It saves a lot of filament on big solid models.</p></details>
+    </section>
+    <section class="faq">
+      <h2>Pegs, pieces and assembly</h2>
+      <details><summary>How do the pieces connect?</summary><p>Every seam gets alignment pegs on one side and matching sockets on the other. Choose press fit for a tight, glue-free fit, or glue fit for a looser fit you glue. Pegs are sized down on small pieces and skipped where they won't fit safely.</p></details>
+      <details><summary>How do I know which piece goes where?</summary><p>Each cut face is engraved with the number of the piece that joins it. Plates are filled in build order, so you can start assembling while the rest prints.</p></details>
+      <details><summary>What happens to tiny pieces?</summary><p>Small slivers are merged into the piece next to them, as long as the result still fits your printer. You can set what counts as small.</p></details>
+      <details><summary>Do I still need glue?</summary><p>For most props, yes, use pegs to line pieces up and glue to hold them. Heavy pieces also benefit from a rod or pipe through the middle.</p></details>
+    </section>
+    <section class="faq">
+      <h2>Printers, slicers and files</h2>
+      <details><summary>Which printers does it work with?</summary><p>Any FDM printer you can slice for in Bambu Studio, OrcaSlicer or PrusaSlicer. Presets are built in for Bambu Lab (A1 mini, A1, P1P, P1S, X1 Carbon, X1E, H2D, H2D Pro, H2S), Prusa (MK4S, CORE One, XL), Creality (K1C, K2 Plus, Ender-3 V3), Elegoo Centauri Carbon, Anycubic Kobra 3 and Qidi (Q1 Pro, X-Max 3), and you can add a custom bed size.</p></details>
+      <details><summary>Can I use two printers with different bed sizes?</summary><p>Yes. Cuts are planned around the biggest printer, then each piece goes to the smallest printer it fits on.</p></details>
+      <details><summary>Which slicers do I need?</summary><p>Bambu Studio, OrcaSlicer or PrusaSlicer, all free. The app uses one of them to lay out the plates. The finished projects also open in Orca-based slicers like QIDI Studio and ElegooSlicer.</p></details>
+      <details><summary>Which file types can it open?</summary><p>STL, OBJ, 3MF, PLY and OFF.</p></details>
+      <details><summary>What if my model is damaged?</summary><p>Small problems like holes and flipped faces are fixed automatically. If a model is too damaged, the app tells you, and you can repair it first, for example with Fix model in Bambu Studio on Windows.</p></details>
+    </section>
+    <section class="faq">
+      <h2>Computers and privacy</h2>
+      <details><summary>What computers does it run on?</summary><p>Windows 10 or newer, and Macs with Apple silicon (M1 or newer) on macOS 12 or newer. There's no Linux or Intel Mac version.</p></details>
+      <details><summary>Does it need the internet?</summary><p>Only to activate your license and check it now and then. It keeps working offline for up to seven days between checks.</p></details>
+      <details><summary>Are my models uploaded anywhere?</summary><p>No. Models and the files the app makes stay on your computer.</p></details>
+    </section>
+    <section class="faq">
+      <h2>Buying</h2>
+      <details><summary>How much does it cost?</summary><p>$20, one-time. No subscription.</p></details>
+      <details><summary>Does one purchase cover Windows and Mac?</summary><p>Yes. You get both downloads and can activate it on two computers.</p></details>
+      <details><summary>Where do I find my download and license key?</summary><p>They're emailed to you right after checkout. You can also get them any time from Lemon Squeezy's My Orders page.</p></details>
+      <details><summary>Can I buy on my phone and install later?</summary><p>Yes. Everything is emailed to you, so you can install it on your computer whenever you're ready.</p></details>
+      <details><summary>Are updates free?</summary><p>So far every update has been free for existing customers. The app tells you when a new version is out.</p></details>
+      <details><summary>How do I move it to a new computer?</summary><p>Open the License window in the app and choose Deactivate this computer, then activate on the new one.</p></details>
+      <details><summary>I have a question that isn't here.</summary><p>Email <a href="mailto:johnyprints@gmail.com">johnyprints@gmail.com</a>. You'll get an answer from the person who made it.</p></details>
+    </section>
+  </main>
+  <footer>
+    <span>Scale &amp; Cut 3D</span>
+    <a href="/guides/">Guides</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="/get-started.html">Getting started</a>
+    <a href="/support.html">Support</a>
+    <a href="mailto:johnyprints@gmail.com?subject=Scale%20%26%20Cut%203D%20question">Contact</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="https://www.tiktok.com/@cane.prints" target="_blank" rel="noopener">TikTok</a>
+  </footer>
+  <script src="/reddit-offer.js?v=7" defer></script>
+  <script data-goatcounter="https://johnycaneprints.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
