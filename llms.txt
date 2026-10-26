@@ -15,6 +15,9 @@ Guides: https://scaleandcut3d.com/guides/
 - Software to split a 3D model into printable pieces (options compared): https://scaleandcut3d.com/guides/software-to-split-3d-models.html
 - How to add alignment pegs when you split a model: https://scaleandcut3d.com/guides/add-alignment-pegs.html
 - How to 3D print cosplay armor and helmets bigger than your printer: https://scaleandcut3d.com/guides/print-cosplay-armor-bigger-than-your-printer.html
+- How to print a life-size Pokémon (or any character): https://scaleandcut3d.com/guides/print-a-life-size-pokemon-or-character.html
+- How to print giant Christmas decorations: https://scaleandcut3d.com/guides/print-giant-christmas-decorations.html
+- Model too big for the A1 mini? How to split it: https://scaleandcut3d.com/guides/model-too-big-for-a1-mini.html
 FAQ: https://scaleandcut3d.com/faq.html
 
 ## What the application does
@@ -48,7 +51,7 @@ FAQ: https://scaleandcut3d.com/faq.html
 
 ## Who it is for
 
-- People printing models much bigger than their print bed: life-size Halloween props, cosplay armor and helmets, statues, signs and display pieces.
+- People printing models bigger than their print bed: life-size characters (Pokémon, mascots), statues and busts, Halloween and Christmas decorations, cosplay armor and helmets, wall art and signs, people selling pre-split files or large prints, and owners of small printers like the A1 mini whose everyday models don't fit.
 - Works with any FDM printer whose slicer is Bambu Studio, OrcaSlicer or PrusaSlicer, including Bambu Lab A1 mini, A1, P1P, P1S, X1 Carbon, H2D and custom bed sizes.
 - Made by a hobbyist who prints giant Halloween props (a 6 ft skeleton hand was cut into 126 pieces and printed on a Bambu P1P and A1).
 
